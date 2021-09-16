@@ -1,0 +1,99 @@
+/* ----------------------------------------------------------------------------------------- */
+/* COMMENT UPDATE FORM */
+/* ----------------------------------------------------------------------------------------- */
+#commentUpdate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    pointer-events: all;
+    background-color: var(--filter-darker);
+    animation: fadeIn 1s ease;
+}
+#commentUpdate > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+#commentUpdate > form > div:not(.formFooter) {
+    display: flex;
+    width: 100%;
+}
+#commentUpdate > form > div > input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+    color: var(--text-color-alt);
+    border-bottom: 1px solid var(--filter);
+    transition: border-color 1s ease;
+}
+#commentUpdate > form > div > input[type="text"]:focus {
+    border-color: var(--primary-color);
+}
+#commentUpdate > form > .formFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+}
+#commentUpdate > form > .formFooter > #stars {
+    display: flex;
+    flex-flow: row-reverse;
+    height: 30px;
+    position: relative;
+}
+#commentUpdate > form > .formFooter > #stars > input {
+    display: none;
+}
+#commentUpdate > form > .formFooter > #stars > label:before {
+    display: inline-block;
+    margin: 5px;
+    content: "\f005";
+    font-size: 1.25em;
+    font-family: FontAwesome;
+}
+#commentUpdate > form > .formFooter > #stars > .half:before {
+    position: absolute;
+    content: "\f089";
+}
+#commentUpdate > form > .formFooter > #stars > label {
+    float: left;
+    color: var(--filter);
+    transition: color 1s ease;
+}
+#commentUpdate > form > .formFooter > #stars > input:checked ~ label,
+#commentUpdate > form > .formFooter > #stars:not(:checked) > label:hover,
+#commentUpdate > form > .formFooter > #stars:not(:checked) > label:hover ~ label {
+    color: var(--primary-color);
+}
+#commentUpdate > form > .formFooter > #stars > input:checked + label:hover,
+#commentUpdate > form > .formFooter > #stars > input:checked ~ label:hover,
+#commentUpdate > form > .formFooter > #stars > label:hover ~ input:checked ~ label,
+#commentUpdate > form > .formFooter > #stars > input:checked ~ label:hover ~ label {
+    color: var(--primary-color);
+}
+#commentUpdate > form > .formFooter > div:not(#stars) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#commentUpdate > form > .formFooter > div > input[type="submit"] {
+    width: fit-content;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+#commentUpdate > form > .formFooter > div > input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}

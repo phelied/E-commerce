@@ -1,0 +1,6 @@
+.removeFromCart > svg > path {
+    color: var(--text-color-alt);
+}
+.removeFromCart:hover > svg > path {
+    opacity: 0.8;
+}

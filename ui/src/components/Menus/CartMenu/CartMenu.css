@@ -1,0 +1,56 @@
+/* ----------------------------------------------------------------------------------------- */
+/* CART MENU */
+/* ----------------------------------------------------------------------------------------- */
+.cartMenu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    position: fixed;
+    top: -200px;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+.cartMenu.openedMenu {
+    transform: translateY(300px);
+}
+.cartMenu > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.cartMenu > div > h3,
+.cartMenu > div > h4 {
+    margin: 0px auto 10px auto;
+    color: var(--text-color-alt);
+}
+.cartMenu > div > h3 > span {
+    color: var(--primary-color);
+}
+.cartMenu > div > p {
+    color: var(--text-color-alt);
+}
+.cartMenu > div > p > span {
+    color: var(--primary-color);
+}
+.cartMenu > div > a {
+    width: fit-content;
+    margin: 20px auto 0px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+.cartMenu > div > a:hover {
+    background-color: var(--background-color-primary);
+}

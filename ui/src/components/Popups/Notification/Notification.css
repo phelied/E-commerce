@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------------------------------- */
+/* NOTIFICATION */
+/* ----------------------------------------------------------------------------------------- */
+#notification {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--filter-darker);
+    backdrop-filter: blur(20px);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 1s ease forwards;
+}
+#notification.hide {
+    animation: fadeOut 1s ease forwards;
+}
+#notification > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+#notification > .icon > svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#notification > p {
+    padding: 0px 15px 0px 0px;
+    white-space: nowrap;
+}

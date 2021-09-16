@@ -1,0 +1,112 @@
+/* ----------------------------------------------------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------------------------------------------------- */
+footer {
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+	padding: 20px;
+    background-color: var(--background-color-alt);
+	box-shadow: var(--box-shadow);
+	z-index: 100;
+}
+footer > .firstRow,
+footer > .secondRow,
+footer > .thirdRow {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	margin: 0px 0px 50px 0px;
+}
+footer > .firstRow > div,
+footer > .secondRow > div {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% / 4);
+}
+footer > .secondRow > div {
+	flex-direction: row;
+}
+footer > .secondRow > div > .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+}
+footer > .secondRow > div > .icon > svg {
+	font-size: 30px !important;
+}
+footer > .secondRow > div > .footerText {
+	flex: 1;
+}
+footer > .firstRow > div > h4,
+footer > .secondRow > div > .footerText > h4 {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 50px;
+	height: 50px;
+	padding: 0px 10px;
+	background-color: var(--background-color-primary);
+}
+footer > .firstRow > div > a {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 30px;
+	height: 30px;
+	padding: 0px 10px;
+	transition: color 1s ease;
+}
+footer > .firstRow > div > a:hover {
+	color: var(--primary-color);
+}
+footer > .secondRow > div > .footerText > p {
+	padding: 10px;
+}
+footer > .thirdRow > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0px;
+	border-top: 1px solid var(--background-color-primary);
+	border-bottom: 1px solid var(--background-color-primary);
+}
+footer > .thirdRow > div > h2 {
+	font-size: 50px;
+}
+footer > .thirdRow > div > h2 > span {
+	color: var(--primary-color);
+}
+footer > p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+footer > p > span {
+	color: var(--primary-color);
+}
+@media screen and (max-width: 1200px) {
+	footer > .firstRow {
+		flex-flow: wrap;
+	}
+	footer > .firstRow > div {
+		width: calc(100% / 2);
+	}
+	footer > .firstRow > div:first-of-type,
+	footer > .firstRow > div:nth-of-type(2) {
+		margin: 0px 0px 50px 0px;
+	}
+	footer > .firstRow > div > h4,
+	footer > .firstRow > div > a {
+		justify-content: center;
+	}
+	footer > .secondRow {
+		display: none;
+	}
+}

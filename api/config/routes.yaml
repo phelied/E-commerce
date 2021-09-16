@@ -1,0 +1,221 @@
+# ----------------------------------------------------------------------------------------- #
+# HOME #
+# ----------------------------------------------------------------------------------------- #
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+# ----------------------------------------------------------------------------------------- #
+# USER #
+# ----------------------------------------------------------------------------------------- #
+userCreate:
+    path: /user/create
+    controller: App\Controller\UserController::create
+userRead:
+    path: /user/read/{id}
+    controller: App\Controller\UserController::read
+    requirements:
+        id: "[0-9]+"
+userUpdate:
+    path: /user/update
+    controller: App\Controller\UserController::update
+userDelete:
+    path: /user/delete
+    controller: App\Controller\UserController::delete
+usersRead:
+    path: /users/read/{page}
+    controller: App\Controller\UserController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# CATEGORY #
+# ----------------------------------------------------------------------------------------- #
+categoryCreate:
+    path: /category/create
+    controller: App\Controller\CategoryController::create
+categoryRead:
+    path: /category/read/{id}
+    controller: App\Controller\CategoryController::read
+    requirements:
+        id: "[0-9]+"
+categoryUpdate:
+    path: /category/update
+    controller: App\Controller\CategoryController::update
+categoryDelete:
+    path: /category/delete
+    controller: App\Controller\CategoryController::delete
+categoriesRead:
+    path: /categories/read/{page}
+    controller: App\Controller\CategoryController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# PRODUCT #
+# ----------------------------------------------------------------------------------------- #
+productCreate:
+    path: /product/create
+    controller: App\Controller\ProductController::create
+productRead:
+    path: /product/read/{id}
+    controller: App\Controller\ProductController::read
+    requirements:
+        id: "[0-9]+"
+productUpdate:
+    path: /product/update
+    controller: App\Controller\ProductController::update
+productDelete:
+    path: /product/delete
+    controller: App\Controller\ProductController::delete
+productsRead:
+    path: /products/read/{page}
+    controller: App\Controller\ProductController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+productsLatest:
+    path: /products/latest
+    controller: App\Controller\ProductController::latest
+productSearch:
+    path: /products/search
+    controller: App\Controller\ProductController::search
+productsRange:
+    path: /products/range
+    controller: App\Controller\ProductController::range
+# ----------------------------------------------------------------------------------------- #
+# COMMENT #
+# ----------------------------------------------------------------------------------------- #
+commentCreate:
+    path: /comment/create
+    controller: App\Controller\CommentController::create
+commentRead:
+    path: /comment/read/{id}
+    controller: App\Controller\CommentController::read
+    requirements:
+        id: "[0-9]+"
+commentUpdate:
+    path: /comment/update
+    controller: App\Controller\CommentController::update
+commentDelete:
+    path: /comment/delete
+    controller: App\Controller\CommentController::delete
+commentsRead:
+    path: /comments/read/{page}
+    controller: App\Controller\CommentController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# DELIVERY #
+# ----------------------------------------------------------------------------------------- #
+deliveryCreate:
+    path: /delivery/create
+    controller: App\Controller\DeliveryController::create
+deliveryRead:
+    path: /delivery/read/{id}
+    controller: App\Controller\DeliveryController::read
+    requirements:
+        id: "[0-9]+"
+deliveryUpdate:
+    path: /delivery/update
+    controller: App\Controller\DeliveryController::update
+deliveryDelete:
+    path: /delivery/delete
+    controller: App\Controller\DeliveryController::delete
+deliveriesRead:
+    path: /deliveries/read/{page}
+    controller: App\Controller\DeliveryController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# ORDER #
+# ----------------------------------------------------------------------------------------- #
+orderCreate:
+    path: /order/create
+    controller: App\Controller\OrderController::create
+orderRead:
+    path: /order/read/{id}
+    controller: App\Controller\OrderController::read
+    requirements:
+        id: "[0-9]+"
+orderUpdate:
+    path: /order/update
+    controller: App\Controller\OrderController::update
+orderConfirmPayment:
+    path: /order/confirm
+    controller: App\Controller\OrderController::confirmPayment
+orderDelete:
+    path: /order/delete
+    controller: App\Controller\OrderController::delete
+ordersRead:
+    path: /orders/read/{page}
+    controller: App\Controller\OrderController::readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# DISCOUNT #
+# ----------------------------------------------------------------------------------------- #
+discountCreate:
+    path: /discount/create
+    controller: App\Controller\DiscountController:create
+discountRead:
+    path: /discount/read/{id}
+    controller: App\Controller\DiscountController:read
+    requirements:
+        id: "[0-9]+"
+discountUpdate:
+    path: /discount/update
+    controller: App\Controller\DiscountController:update
+discountDelete:
+    path: /discount/delete
+    controller: App\Controller\DiscountController:delete
+discountsRead:
+    path: /discounts/read/{page}
+    controller: App\Controller\DiscountController:readAll
+    defaults:
+        page: 0
+    requirements:
+        page: "[0-9]+"
+# ----------------------------------------------------------------------------------------- #
+# AUTHENTICATOR #
+# ----------------------------------------------------------------------------------------- #
+login:
+    path: /login
+    controller: App\Controller\AuthenticatorController::login
+logout:
+    path: /logout
+    controller: App\Controller\AuthenticatorController::logout
+verify:
+    path: /user/verify/{id}
+    controller: App\Controller\AuthenticatorController::verify
+    requirements:
+        id: "[0-9]+"
+deactivate:
+    path: /user/deactivate
+    controller: App\Controller\AuthenticatorController::deactivate
+security:
+    path: /user/security
+    controller: App\Controller\AuthenticatorController::security
+# ----------------------------------------------------------------------------------------- #
+# UNMATCHED #
+# ----------------------------------------------------------------------------------------- #
+unmatchedFirst:
+    path: /{anythingFirst}
+    controller: App\Controller\DefaultController::unmatched
+unmatchedSecond:
+    path: /{anythingFirst}/{anythingSecond}
+    controller: App\Controller\DefaultController::unmatched
+unmatchedThird:
+    path: /{anythingFirst}/{anythingSecond}/{anythingThird}
+    controller: App\Controller\DefaultController::unmatched
+unmatchedFourth:
+    path: /{anythingFirst}/{anythingSecond}/{anythingThird}/{anythingFourth}
+    controller: App\Controller\DefaultController::unmatched

@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------------------------------- */
+/* CONFIRM */
+/* ----------------------------------------------------------------------------------------- */
+#confirmLayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    pointer-events: all;
+    background-color: var(--filter-darker);
+    animation: fadeIn 1s ease;
+}
+#confirmLayer > .confirm {
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+#confirmLayer > .confirm > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--text-color-alt);
+    border-bottom: 1px solid var(--filter);
+}
+#confirmLayer > .confirm > .buttons {
+    display: flex;
+}
+#confirmLayer > .confirm > .buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+}
+#confirmLayer > .confirm > .buttons > .confirm {
+    background-color: var(--background-color-primary);
+}
+#confirmLayer > .confirm > .buttons > .cancel {
+    background-color: var(--error-color);
+}

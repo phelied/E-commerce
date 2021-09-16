@@ -1,0 +1,194 @@
+/* ----------------------------------------------------------------------------------------- */
+/* ADMIN */
+/* ----------------------------------------------------------------------------------------- */
+#admin > div {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+#admin > div > .adminInfo {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 200px;
+    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+#admin > div > .adminInfo > .userPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+#admin > div > .adminInfo > .userPicture > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+}
+#admin > div > .adminInfo > .greetings,
+#admin > div > .adminInfo > .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color-alt);
+}
+#admin > div > .adminInfo > .userIdentity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+#admin > div > .adminInfo > .userIdentity > p {
+    color: var(--text-color-alt);
+}
+#admin > div > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+#admin > div > .content > div {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 20px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 1s ease;
+}
+#admin > div > .content > div > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--filter);
+}
+/* ----------------------------------------------------------------------------------------- */
+/* ADMIN PRODUCTS */
+/* ----------------------------------------------------------------------------------------- */
+#admin > div > .content > div > .columns {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+}
+#admin > div > .content > div > .columns > .id,
+#admin > div > .content > div > .columns > .name,
+#admin > div > .content > div > .columns > .company,
+#admin > div > .content > div > .columns > .price,
+#admin > div > .content > div > .columns > .code,
+#admin > div > .content > div > .columns > .percent,
+#admin > div > .content > div > .columns > .product,
+#admin > div > .content > div > .columns > .category,
+#admin > div > .content > div > .columns > .site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    width: 50px;
+    height: 100%;
+}
+#admin > div > .content > div > .columns > .name,
+#admin > div > .content > div > .columns > .company,
+#admin > div > .content > div > .columns > .price,
+#admin > div > .content > div > .columns > .code,
+#admin > div > .content > div > .columns > .percent,
+#admin > div > .content > div > .columns > .product,
+#admin > div > .content > div > .columns > .category,
+#admin > div > .content > div > .columns > .site {
+    width: inherit;
+}
+#admin > div > .content > div > .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#admin > div > .content > div > .list > div {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid var(--filter);
+    animation: fadeIn 1s ease;
+}
+#admin > div > .content > div > .list > div:last-of-type {
+    border: none;
+}
+#admin > div > .content > div > .list > div > .id,
+#admin > div > .content > div > .list > div > .name,
+#admin > div > .content > div > .list > div > .company,
+#admin > div > .content > div > .list > div > .price,
+#admin > div > .content > div > .list > div > .code,
+#admin > div > .content > div > .list > div > .percent,
+#admin > div > .content > div > .list > div > .product,
+#admin > div > .content > div > .list > div > .category,
+#admin > div > .content > div > .list > div > .site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    width: 50px;
+    height: 100%;
+    background-color: var(--background-color-primary);
+}
+#admin > div > .content > div > .list > div > .name,
+#admin > div > .content > div > .list > div > .company,
+#admin > div > .content > div > .list > div > .price,
+#admin > div > .content > div > .list > div > .code,
+#admin > div > .content > div > .list > div > .percent,
+#admin > div > .content > div > .list > div > .product,
+#admin > div > .content > div > .list > div > .category,
+#admin > div > .content > div > .list > div > .site {
+    width: inherit;
+    background-color: inherit;
+}
+#admin > div > .content > div > .list > div > .name > p,
+#admin > div > .content > div > .list > div > .company > p,
+#admin > div > .content > div > .list > div > .price > p,
+#admin > div > .content > div > .list > div > .code > p,
+#admin > div > .content > div > .list > div > .percent > p,
+#admin > div > .content > div > .list > div > .product > p,
+#admin > div > .content > div > .list > div > .category > p,
+#admin > div > .content > div > .list > div > .site > p {
+    color: var(--text-color-alt);
+}
+#admin > div > .content > div > .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+}
+#admin > div > .content > div > .pagination > button {
+    width: fit-content;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+#admin > div > .content > div > .pagination > button:hover {
+    background-color: var(--background-color-primary);
+}

@@ -1,0 +1,188 @@
+Please follow the link below to see all the postman documentation for this project :
+https://documenter.getpostman.com/view/15923198/Tzm9hu7C#1de5afb8-a605-4de7-89dd-6ada19886f7b
+
+E-commerce
+Make things easier for your teammates with a complete collection description.
+User
+Make things easier for your teammates with a complete folder description.
+POST
+Register
+http://localhost:3001/register
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+firstname
+lastname
+password
+email
+phone
+country
+birthdate
+email_verified_at
+city
+address
+postal_code
+number_apt
+pictures
+credit_card_number
+credit_card_validity
+[ROLE]
+active
+POST
+Login
+http://localhost:3001/login
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+email
+password
+GET
+Get Profile Credentials
+http://localhost:3001/user?user_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+user_id
+POST
+Update Profile
+http://localhost:3001/user/update
+Make things easier for your teammates with a complete request description.
+GET
+Delete User
+http://localhost:3001/user/delete?user_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+user_id
+Order
+Make things easier for your teammates with a complete folder description.
+POST
+Add Order
+http://localhost:3001/order/add
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+user_id
+product_id
+delivery
+total
+state_payment
+state_delivery
+GET
+Show Order
+http://localhost:3001/order?order_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+order_id
+POST
+Update Order
+Make things easier for your teammates with a complete request description.
+GET
+Delete Order
+http://localhost:3001/order/delete?order_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+order_id
+Category
+Make things easier for your teammates with a complete folder description.
+Product
+Make things easier for your teammates with a complete folder description.
+Commentaries
+Make things easier for your teammates with a complete folder description.
+POST
+Add Commentary
+http://localhost:3001/comment/add
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+product_id
+user_id
+content
+data_comment
+stars
+GET
+Show Commentaries
+http://localhost:3001/comments?product_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+product_id
+POST
+Update Commentary
+Make things easier for your teammates with a complete request description.
+GET
+Delete Commentary
+http://localhost:3001/commentary/delete?commentary_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+commentary_id
+Discount
+Make things easier for your teammates with a complete folder description.
+POST
+Add Discount
+http://localhost:3001/discount/add
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+title
+discount
+GET
+Show Discount
+http://localhost:3001/discount?discount_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+discount_id
+POST
+Update Discount
+Make things easier for your teammates with a complete request description.
+GET
+Delete Discount
+http://localhost:3001/discount/delete?discount_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+discount_id
+POST
+Add Product
+http://localhost:3001/product/add
+Make things easier for your teammates with a complete request description.
+Bodyform-data
+category_id
+title
+price
+quantity
+description
+stars
+available
+pictures
+weight
+GET
+Show Product
+http://localhost:3001/product?product_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+product_id
+POST
+Update Product
+http://localhost:3001/product/update
+Make things easier for your teammates with a complete request description.
+GET
+Delete Product
+http://localhost:3001/product/delete?product_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+product_id
+POST
+Add Category
+http://localhost:3001/category/add?title
+Make things easier for your teammates with a complete request description.
+Request Params
+title
+Bodyform-data
+title
+GET
+Show Category
+http://localhost:3001/category?category_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+category_id
+POST
+Update Category
+Make things easier for your teammates with a complete request description.
+GET
+Delete Category
+http://localhost:3001/category/delete?category_id=
+Make things easier for your teammates with a complete request description.
+Request Params
+category_id

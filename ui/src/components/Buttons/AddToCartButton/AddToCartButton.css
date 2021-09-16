@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------------------------------- */
+/* ADD TO CART BUTTON */
+/* ----------------------------------------------------------------------------------------- */
+.addToCart {
+    width: fit-content;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+.addToCart:hover {
+    background-color: var(--background-color-primary);
+}
+.slider > .product > .addToCart {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+}
+.productCard > .addToCart {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+}

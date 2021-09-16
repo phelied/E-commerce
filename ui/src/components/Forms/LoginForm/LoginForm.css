@@ -1,0 +1,83 @@
+/* ----------------------------------------------------------------------------------------- */
+/* LOGIN FORM */
+/* ----------------------------------------------------------------------------------------- */
+#loginForm {
+    display: flex;
+    width: 200px;
+    height: 250px;
+    position: fixed;
+    top: -200px;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+#loginForm.openedLogin {
+    transform: translateY(300px);
+}
+#loginForm > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    background-color: var(--background-color);
+}
+#loginForm > form > h3 {
+    margin: 0px auto 10px auto;
+    color: var(--text-color-alt);
+}
+#loginForm > form > h3 > span {
+    color: var(--primary-color);
+}
+#loginForm > form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+}
+#loginForm > form > div > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: var(--background-color-alt);
+}
+#loginForm > form > div > input:not([type="submit"]) {
+    width: 180px;
+    height: 30px;
+    color: var(--text-color-alt);
+    padding: 0px 10px 0px 40px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+#loginForm > form > div > input[type="submit"] {
+    margin: 10px auto 0px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+#loginForm > form > div > input[type="submit"]:hover {
+    background-color: var(--background-color-primary);
+}
+#loginForm > form > p {
+    color: var(--text-color-alt);
+}
+#loginForm > form > p > a {
+    color: var(--primary-color);
+}

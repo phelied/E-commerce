@@ -1,0 +1,90 @@
+/* ----------------------------------------------------------------------------------------- */
+/* USER UPDATE FORM */
+/* ----------------------------------------------------------------------------------------- */
+#account > div > .content > div > #userUpdate {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+#account > div > .content > div > #userUpdate > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#account > div > .content > div > #userUpdate > form > .password,
+#account > div > .content > div > #userUpdate > form > div > div > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+}
+#account > div > .content > div > #userUpdate > form > .password {
+    width: 540px;
+    margin: 20px auto;
+}
+#account > div > .content > div > #userUpdate > form > .submitButton {
+    border-top: 1px solid var(--filter);
+}
+#account > div > .content > div > #userUpdate > form > div:not(.password) {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--filter);
+}
+#account > div > .content > div > #userUpdate > form > div > div:not(.icon) {
+    width: calc(100% / 2);
+    padding: 20px;
+}
+#account > div > .content > div > #userUpdate > form > div > .icon,
+#account > div > .content > div > #userUpdate > form > div > div > div > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 160px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: var(--background-color-alt);
+}
+#account > div > .content > div > #userUpdate > form > div > label,
+#account > div > .content > div > #userUpdate > form > div > div > div > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    margin: 0px 10px 0px 0px;
+    border-radius: 15px;
+    background-color: var(--background-color-primary);
+    box-shadow: var(--box-shadow);
+}
+#account > div > .content > div > #userUpdate > form > div > input,
+#account > div > .content > div > #userUpdate > form > div > div > div > input {
+    width: calc(100% - 160px);
+    height: 30px;
+    margin: auto;
+    padding: 0px 10px 0px 40px;
+    color: var(--text-color-alt);
+    border-radius: 15px;
+    border: 1px solid var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: color 1s ease, border-color 1s ease, background-color 1s ease;
+}
+#account > div > .content > div > #userUpdate > form > .password > input:focus,
+#account > div > .content > div > #userUpdate > form > div > div > div > input:focus {
+    border-color: var(--background-color-primary);
+}
+#account > div > .content > div > #userUpdate > form > div > input[type="submit"] {
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    background-color: var(--background-color-alt);
+    box-shadow: var(--box-shadow);
+    transition: background-color 1s ease;
+}
+#account > div > .content > div > #userUpdate > form > div > input[type="submit"]:hover {
+    background-color: var(--background-color-primary);
+}

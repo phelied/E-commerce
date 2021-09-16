@@ -1,0 +1,97 @@
+/* ----------------------------------------------------------------------------------------- */
+/* MAIN MENU */
+/* ----------------------------------------------------------------------------------------- */
+#navigationLayer > #mainNav {
+    display: flex;
+    width: 200px;
+    height: calc(100% - 100px);
+    position: relative;
+    transform: translateX(-200px);
+    background-color: var(--text-color);
+    transition: transform 1s ease;
+    pointer-events: all;
+}
+#navigationLayer > #mainNav.show {
+    transform: translateX(0px);
+}
+#navigationLayer > #mainNav > #mainNavigationButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    background-color: var(--background-color-alt);
+}
+#navigationLayer > #mainNav > #mainNavigationButtonContainer > #mainNavigationButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#navigationLayer > #mainNav > #mainNavigationButtonContainer > #mainNavigationButton > span {
+    width: 30px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: var(--text-color);
+    transition: opacity 1s ease, transform 1s ease;
+}
+#navigationLayer > #mainNav.show > #mainNavigationButtonContainer > #mainNavigationButton > span:first-of-type {
+    transform: translateY(8px) rotate(45deg);
+}
+#navigationLayer > #mainNav.show > #mainNavigationButtonContainer > #mainNavigationButton > span:nth-of-type(2) {
+    opacity: 0;
+}
+#navigationLayer > #mainNav.show > #mainNavigationButtonContainer > #mainNavigationButton > span:last-of-type {
+    transform: translateY(-8px) rotate(-45deg);
+}
+#navigationLayer > #mainNav > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    background-color: var(--dar-background-color);
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+    z-index: 10;
+}
+#navigationLayer > #mainNav > ul > .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    background-color: var(--background-color-alt);
+}
+#navigationLayer > #mainNav > ul > li:not(.category) {
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid var(--filter);
+}
+#navigationLayer > #mainNav > ul > li:not(.category) > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    color: var(--text-color-alt);
+    transition: background-color 1s ease;
+}
+#navigationLayer > #mainNav > ul > li:not(.category) > a:hover {
+    background-color: var(--background-color-primary);
+}
+#navigationLayer > #mainNav > ul > li:not(.category) > a > p {
+    color: var(--text-color-alt);
+    transition: color 1s ease;
+}
+#navigationLayer > #mainNav > ul > li:not(.category) > a:hover > p {
+    color: var(--text-color);
+}

@@ -1,0 +1,29 @@
+.payment{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 50px;
+    min-width: 500px;
+    box-shadow: var(--box-shadow);
+}
+.payment > div > h3{
+    color: var(--text-color-alt);
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.payment > div > h3 > .price{
+    color: var(--primary-color);
+}
+.payment > div > a{
+    color: var(--primary-color);
+    font-size: 1.3em;
+}

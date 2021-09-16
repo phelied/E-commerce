@@ -1,0 +1,41 @@
+.userOrders {
+    display: flex;
+    flex-direction: column;
+}
+.userOrders > .printThis {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.userOrders > .printThis > h3, .userOrders > .printThis > h3 > svg > path {
+    color: var(--text-color-alt);
+    text-align: center;
+}
+.userOrders > .printThis > h3:hover, .userOrders > .printThis > h3:hover > svg > path {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.userOrders > .OrderProducts {
+    border-top: 1px solid #dedede;
+    margin-top: 25px;
+}
+.userOrders > .OrderProducts > h3{
+    color: var(--text-color-alt);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+}
+.userOrders > .OrderProducts > div {
+    display: flex;
+    justify-content: space-around;
+}
+.userOrders > .OrderProducts > div > div > img {
+    height: 50px;
+}
+.userOrders > .OrderProducts > div > div > h3 {
+    color: var(--text-color-alt);
+}
+.userOrders > .rowPrint {
+    display: flex;
+    justify-content: space-around
+}
